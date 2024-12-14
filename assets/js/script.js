@@ -56,3 +56,18 @@ document.addEventListener("DOMContentLoaded", () => {
     
   });
 });
+// JavaScript to toggle position of background-image on scroll
+document.addEventListener('scroll', function() {
+  const backgroundImage = document.querySelector('.background-image');
+  const sectionEnd = backgroundImage.offsetHeight;
+  const scrollPosition = window.scrollY + window.innerHeight;
+
+  if (scrollPosition >= sectionEnd) {
+      backgroundImage.style.position = 'fixed';
+      backgroundImage.style.top = '0'; // Ensure it's fixed to the top
+  } else {
+      // Remove 'fixed' position when not at the end of the section
+      backgroundImage.style.position = 'relative'; // or 'absolute', depending on your layout
+  }
+});
+

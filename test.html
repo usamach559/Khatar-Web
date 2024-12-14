@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll Animation</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
+
+       
+
+        * {
+            box-sizing: border-box;
+            user-select: none;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            color: white;
+            background: black;
+            font-family: "Cormorant Garamond", serif;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: clamp(1rem, 5vw, 5rem);
+            font-weight: 400;
+            text-align: center;
+            letter-spacing: 0.5em;
+            margin-right: -0.5em;
+            color: hsl(0, 0, 80%);
+            width: 90vw;
+            max-width: 1200px;
+        }
+
+        header {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5%;
+            width: 100%;
+            z-index: 3;
+            height: 7em;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: clamp(0.66rem, 2vw, 1rem);
+            letter-spacing: 0.5em;
+        }
+
+        section {
+            height: 100%;
+            width: 100%;
+            top: 0;
+            position: fixed;
+            visibility: hidden;
+
+            .outer,
+            .inner {
+                width: 100%;
+                height: 100%;
+                overflow-y: hidden;
+            }
+
+            .bg {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                background-size: cover;
+                background-position: center;
+
+                h2 {
+                    z-index: 2;
+                }
+
+                .clip-text {
+                    overflow: hidden;
+                }
+            }
+        }
+
+        .first {
+            .bg {
+                background-image: 
+                    url(https://images.unsplash.com/photo-1617478755490-e21232a5eeaf?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzU1NjM5NA&ixlib=rb-1.2.1&q=75&w=1920);
+            }
+        }
+
+        .second {
+            .bg {
+                background-image: 
+                    url("https://images.unsplash.com/photo-1617128734662-66da6c1d3505?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzc3NTM3MA&ixlib=rb-1.2.1&q=75&w=1920");
+            }
+        }
+
+        .third {
+            .bg {
+                background-image: 
+                    url(https://images.unsplash.com/photo-1617438817509-70e91ad264a5?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzU2MDk4Mg&ixlib=rb-1.2.1&q=75&w=1920);
+            }
+        }
+
+        .fourth {
+            .bg {
+                background-image:
+                    url(https://images.unsplash.com/photo-1617412327653-c29093585207?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzU2MDgzMQ&ixlib=rb-1.2.1&q=75&w=1920);
+            }
+        }
+
+        .fifth {
+            .bg {
+                background-image: 
+                    url("https://images.unsplash.com/photo-1617141636403-f511e2d5dc17?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxODAzMjc4Mw&ixlib=rb-1.2.1&q=75w=1920");
+                background-position: 50% 45%;
+            }
+        }
+
+        h2 * {
+            will-change: transform;
+        }
+    </style>
+</head>
+
+<body>
+    - var headlines = [
+    - 'Explore our world',
+    - 'View all its beauty',
+    - 'Take lots of photos',
+    - 'Each one of them pretty'
+    - ]
+    
+    each headline, index in headlines
+      section.hero
+        .hero-inner(id="section-" + index)
+          figure
+          h2.hero__title= headline
+        
+    section.content
+        article.content__inner
+          h1.content__title Some Happy Little Text
+          h3.content__author By Bob Ross
+    
+          p A thin paint will stick to a thick paint. The shadows are just like the highlights, but we're going in the opposite direction. When you do it your way you can go anywhere you choose.
+    
+          p You have to make almighty decisions when you're the creator. When you buy that first tube of paint it gives you an artist license. There we go. The little tiny Tim easels will let you down. Let's just drop a little Evergreen right here.
+    
+          p Trees grow in all kinds of ways. They're not all perfectly straight. Not every limb is perfect. I really believe that if you practice enough you could paint the 'Mona Lisa' with a two-inch brush. Just pretend you are a whisper floating across a mountain. This is your world, whatever makes you happy you can put in it. Go crazy.
+    
+          p The first step to doing anything is to believe you can do it. See it finished in your mind before you ever start. We'll play with clouds today. Every single thing in the world has its own personality - and it is up to you to make friends with the little rascals. Don't kill all your dark areas - you need them to show the light. We don't want to set these clouds on fire. Every day I learn.
+          
+          blockquote When you do it your way you can go anywhere you choose.
+    
+          p Let's get wild today. Once you learn the technique, ohhh! Turn you loose on the world; you become a tiger. This is probably the greatest thing to happen in my life - to be able to share this with you.
+    
+          p I'm a water fanatic. I love water. This is gonna be a happy little seascape. Put light against light - you have nothing. Put dark against dark - you have nothing. It's the contrast of light and dark that each give the other one meaning. Let's put a touch more of the magic here. I'm going to mix up a little color. We’ll use Van Dyke Brown, Permanent Red, and a little bit of Prussian Blue.
+          
+          p And that's when it becomes fun - you don't have to spend your time thinking about what's happening - you just let it happen. Let all these things just sort of happen. Don't fight it, use what happens. Let's put some happy little bushes on the other side now.
+          
+          blockquote Don't fight it, use what happens.
+    
+          p If we're going to have animals around we all have to be concerned about them and take care of them. I'll go over the colors one more time that we use: Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red. Anytime you learn something your time and energy are not wasted. This is your world. We want to use a lot pressure while using no pressure at all. Just let go - and fall like a little waterfall.
+    
+          p Let's build some happy little clouds up here. Everyone is going to see things differently - and that's the way it should be. Let's do that again. A tree needs to be your friend if you're going to paint him. That's why I paint - because I can create the kind of world I want - and I can make this world as happy as I want it.
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js"></script>
+    <script>
+        gsap.registerPlugin(Observer);
+
+        let sections = document.querySelectorAll("section"),
+            images = document.querySelectorAll(".bg"),
+            headings = gsap.utils.toArray(".section-heading"),
+            outerWrappers = gsap.utils.toArray(".outer"),
+            innerWrappers = gsap.utils.toArray(".inner"),
+            splitHeadings = headings.map(heading => new SplitText(heading, { type: "chars,words,lines", linesClass: "clip-text" })),
+            currentIndex = -1,
+            wrap = gsap.utils.wrap(0, sections.length),
+            animating;
+
+        gsap.set(outerWrappers, { yPercent: 100 });
+        gsap.set(innerWrappers, { yPercent: -100 });
+
+        function gotoSection(index, direction) {
+            index = wrap(index); // make sure it's valid
+            animating = true;
+            let fromTop = direction === -1,
+                dFactor = fromTop ? -1 : 1,
+                tl = gsap.timeline({
+                    defaults: { duration: 1.25, ease: "power1.inOut" },
+                    onComplete: () => animating = false
+                });
+            if (currentIndex >= 0) {
+                // The first time this function runs, current is -1
+                gsap.set(sections[currentIndex], { zIndex: 0 });
+                tl.to(images[currentIndex], { yPercent: -15 * dFactor })
+                    .set(sections[currentIndex], { autoAlpha: 0 });
+            }
+            gsap.set(sections[index], { autoAlpha: 1, zIndex: 1 });
+            tl.fromTo([outerWrappers[index], innerWrappers[index]], {
+                yPercent: i => i ? -100 * dFactor : 100 * dFactor
+            }, {
+                yPercent: 0
+            }, 0)
+                .fromTo(images[index], { yPercent: 15 * dFactor }, { yPercent: 0 }, 0)
+                .fromTo(splitHeadings[index].chars, {
+                    autoAlpha: 0,
+                    yPercent: 150 * dFactor
+                }, {
+                    autoAlpha: 1,
+                    yPercent: 0,
+                    duration: 1,
+                    ease: "power2",
+                    stagger: {
+                        each: 0.02,
+                        from: "random"
+                    }
+                }, 0.2);
+
+            currentIndex = index;
+        }
+
+        Observer.create({
+            type: "wheel,touch,pointer",
+            wheelSpeed: -1,
+            onDown: () => !animating && gotoSection(currentIndex - 1, -1),
+            onUp: () => !animating && gotoSection(currentIndex + 1, 1),
+            tolerance: 10,
+            preventDefault: true
+        });
+
+        gotoSection(0, 1);
+
+// original: https://codepen.io/BrianCross/pen/PoWapLP
+// horizontal version: https://codepen.io/GreenSock/pen/xxWdeMK
+    </script>
+</body>
+
+</html>
