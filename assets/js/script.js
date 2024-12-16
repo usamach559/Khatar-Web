@@ -22,37 +22,36 @@ document.addEventListener("DOMContentLoaded", () => {
     x: 600,
     duration: 2,
     rotation: 45,
-    pin : true,
-    onComplete: function() {
-        gsap.to(".index-animated-first-img", {
-          y: "-=5",      
-          duration: 0.9,   
-          repeat: -1,     
-          yoyo: true,     
-          ease: "bounce.inOut" 
-          
-        });
-      }
+    onComplete: function () {
+      gsap.to(".index-animated-first-img", {
+        y: "-=10",
+        duration: 0.9,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut"
+      });
+    }
   });
+
   gsap.from(".index-hero-fouth-heading-first", {
     opacity: 1,
     x: 500,
     duration: 1.5,
     delay: 3,
-    
+
   });
   gsap.from(".index-hero-fouth-heading-second", {
     opacity: 1,
     x: 500,
     duration: 1.3,
     delay: 3,
-    
+
   });
   gsap.from(".index-hero-fouth-heading-third", {
     opacity: 1,
     x: 500,
     duration: 1.1,
     delay: 3,
-    
+
   });
 });
