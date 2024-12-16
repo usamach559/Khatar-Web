@@ -473,39 +473,3 @@ body {
         left: 25%;
     }
 }
-
-.background-image {
-    background-image: url(../images/hero\ section\ animation\ 2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 30px 0px 0 0;
-    width: 100%;
-    transition: position 2s ease; /* Optional: smooth transition */
-}
-
-.page4 {
-    display: none;
-    height: 120vh;
-
-
-}
-
-.footer {
-    position: relative;
-    /* height: 100vh;
-    width: 100%; */
-
-}
-
-.footer .p {
-    color: black;
-    font-size: 50px;
-}
-
-.page5 {
-    background-image: url(../images/44151df52cb2e2118d5772601438d925.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    margin-top: 100vh;
-}
