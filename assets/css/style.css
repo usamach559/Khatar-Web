@@ -304,7 +304,7 @@ body {
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
     background-color: black !important;
-    transition:  background-color  0.8s ease;
+    transition: background-color 0.8s ease;
 }
 
 .button-container-index:hover .index-first-btn-second {
@@ -313,7 +313,7 @@ body {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     background-color: black !important;
-    transition:  background-color  0.8s ease;
+    transition: background-color 0.8s ease;
 }
 
 .btn-check:checked+.btn,
@@ -481,7 +481,9 @@ body {
     background-repeat: no-repeat;
     padding: 30px 0px 0 0;
     width: 100%;
-    transition: position 2s ease; /* Optional: smooth transition */
+    transition: position 2s ease;
+    padding-bottom: 150px;
+    /* Optional: smooth transition */
 }
 
 .page4 {
@@ -508,8 +510,59 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    margin-top: 100vh;
+    margin-top: 120vh;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+
+    }
+
+    to {
+        transform: translateX(-100%);
+
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before,
+.logos:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+}
+
+.logos:after {
+    right: 0;
 }
 
 
+.logos:hover .logos-slide {
+    animation-play-state: paused;
 
+
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+}
