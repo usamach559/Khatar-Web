@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Baldi-one';
+    src: url(../fonts/Bladi\ One\ Slab\ 4F\ Bold\ Italic.otf);
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Agrandir-Regular';
+    src: url(../fonts/Agrandir-Regular.otf);
+}
+@font-face {
+    font-family: 'Agrandir-bold';
+    src: url(../fonts/Agrandir-TextBold.otf);
+}
+.body {
+    background-image: url(../images/44151df52cb2e2118d5772601438d925.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+.main {
+    height: 50vh;
+}
+.user-review-slider {
+    font-family: 'Agrandir-bold';
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 46.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #EA0000;
+}
+.left-icon{
+    background-color: black;
+    border-radius: 50%;
+    height: 50px ;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    color: white;
+    font-size: 22px;
+}
+.left-icon:hover .icon{
+    color: white;
+    font-size: 18px;
+    transform: rotate(10deg);
+
+}
+.left-icon .icon:hover{
+ background-color: red;
+ transition: all ease 0.4s;
+
+}
