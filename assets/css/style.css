@@ -26,7 +26,10 @@ body {
     /* height: 150vh; */
 
 }
-
+a{
+    text-decoration: none !important;
+    cursor: pointer;
+}
 .navbar {
     /* background-color: rgba(255, 255, 255, 0.434); */
     backdrop-filter: blur(24px)
@@ -592,6 +595,7 @@ body {
     text-decoration-skip-ink: none;
     color: #767875;
 }
+
 @media (max-width:650px) {
     .footer-main-headng {
         font-family: 'Agrandir-TextBold';
@@ -602,5 +606,49 @@ body {
         text-align: center;
         text-decoration-skip-ink: none;
         color: #767875;
-    } 
+    }
+}
+
+.footer-col-headng-first {
+    font-family: 'Agrandir-TextBold';
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 39px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #EA0000;
+}
+
+.footer-col-headng-second {
+    font-family: 'Agrandir-Regular';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #767875;
+}
+
+.footer-col-headng-third {
+    font-family: 'Agrandir-Regular';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.2px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #EA0000 !important;
+}
+
+.footer-last-heading {
+    font-family: 'Agrandir-Regular';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #767875;
 }
