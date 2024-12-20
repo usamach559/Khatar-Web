@@ -933,13 +933,14 @@ a {
     text-decoration-skip-ink: none;
     color: black;
 }
+
 .services-rows {
     border: 2px solid #000000;
     padding: 10px 20px 0 20;
     border-radius: 24px;
-    position: relative; 
+    position: relative;
     overflow: hidden;
-    transition: all 0.3s ease-in-out; 
+    transition: all 0.3s ease-in-out;
 }
 
 .services-rows:hover {
@@ -947,30 +948,23 @@ a {
     border: none;
 }
 
-.services-rows:hover .globe-service-img {
-    animation: revealEffect 1s forwards;
-    opacity: 1;
-    transform: translateY(0);
-}
-
 .globe-service-img {
-    width: 351px; 
-    height: 140px; 
+    width: 351px;
+    height: 140px;
     position: relative;
     bottom: 0;
     left: 100px;
     opacity: 0;
-    transform: translateY(100%); 
-    transition: all 1s ease-in-out; 
+    /* Hidden by default */
+    transform: translateY(100%);
+    /* Start from below */
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    /* Apply 1s transition for both properties */
 }
 
-@keyframes revealEffect {
-    0% {
-        transform: translateY(100%); 
-        opacity: 0; 
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1; 
-    }
+.services-rows:hover .globe-service-img {
+    transform: translateY(0);
+    /* Move up to original position */
+    opacity: 1;
+    /* Make it visible */
 }
