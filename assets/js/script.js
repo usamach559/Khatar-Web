@@ -57,19 +57,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-document.addEventListener('scroll', function () {
-  const backgroundImage = document.querySelector('.background-image');
-  const sectionEnd = backgroundImage.offsetHeight;
-  const scrollPosition = window.scrollY + window.innerHeight;
+  document.addEventListener('scroll', function () {
+    const backgroundImage = document.querySelector('.background-image');
+    const sectionEnd = backgroundImage.offsetHeight;
+    const scrollPosition = window.scrollY + window.innerHeight;
 
-  if (scrollPosition >= sectionEnd) {
-    backgroundImage.style.position = 'fixed';
-    backgroundImage.style.top = '0'; 
-  } else {
-    
-    backgroundImage.style.position = 'relative';
-  }
-});
+    if (scrollPosition >= sectionEnd) {
+      backgroundImage.style.position = 'fixed';
+      backgroundImage.style.top = '0'; 
+    } else {
+      
+      backgroundImage.style.position = 'relative';
+    }
+  });
 
 
 const copy = document.querySelector(".logos-slide").cloneNode(true);

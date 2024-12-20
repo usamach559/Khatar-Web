@@ -26,10 +26,12 @@ body {
     /* height: 150vh; */
 
 }
-a{
+
+a {
     text-decoration: none !important;
     cursor: pointer;
 }
+
 .navbar {
     /* background-color: rgba(255, 255, 255, 0.434); */
     backdrop-filter: blur(24px)
@@ -43,6 +45,8 @@ a{
 
 .search-container {
     position: relative;
+
+
 }
 
 .search-icon-container {
@@ -393,7 +397,7 @@ a{
     }
 
     .index-hero-fouth-heading-third {
-        left: 15%;
+        left: 23%;
     }
 }
 
@@ -556,15 +560,190 @@ a{
 
 
 
+/* portfolio section */
+
+.portfolio-heading {
+    font-family: 'Agrandir-TextBold';
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 46.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #EA0000;
+}
+
+
+.portfolio-tab-row {
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 24px;
+    max-width: 263px;
+    width: 100%;
+    cursor: pointer;
+    background-color: white;
+    /* Default background color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio-tab-row.active {
+    background-color: #E90102;
+    color: white;
+}
+
+.portfolio-tab-row span {
+    font-family: 'Agrandir-Regular';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: black;
+}
+
+.portfolio-tab-row:hover {
+    background-color: #E90102;
+    color: white;
+}
+
+.tab-pane {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Default layout */
+    grid-gap: 16px;
+    /* Gap between items */
+    grid-auto-rows: 223px;
+    /* Fixed row height */
+    grid-auto-flow: dense;
+    /* Fill gaps dynamically */
+}
+
+.masonry-item {
+    background-color: #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    height: 100%;
+    /* Full height of the row */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Width rules for items */
+.masonry-item:nth-child(odd) {
+    grid-column: span 2;
+    /* Occupies 2 columns */
+}
+
+.masonry-item:nth-child(3n) {
+    grid-column: span 1;
+    /* Occupies 1 column */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 500px) {
+    .masonry-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        /* Smaller columns */
+        grid-gap: 8px;
+        /* Reduce gap for smaller screens */
+        grid-auto-rows: 123px;
+        /* Smaller row height */
+    }
+}
+
+@media (min-width: 592px) {
+    .masonry-grid {
+        grid-template-columns: repeat(4, 1fr);
+        /* Four equal columns for larger screens */
+    }
+
+    .masonry-item:nth-child(3n) {
+        grid-column: span 1;
+        /* Maintain single column span for every 3rd item */
+    }
+}
 
 
 
 
+/* demo-section */
 
+.demo-section {
+    height: 100vh;
+    background-color: #f5f5f5;
+    /* Fallback color */
+    background-image: none;
+    /* Start with no visible background */
+    background-size: 0%;
+    /* Initial scale set to 0 */
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-size 1s ease;
+    overflow: hidden;
+}
 
+.demo-section:hover {
+    animation: scaleIn 2s forwards ease-in-out;
+    background-image: url('../images/Free Demo Background.png');
+}
 
+/* Keyframes for Scaling Effect */
+@keyframes scaleIn {
+    0% {
+        background-size: 0%;
+        background-image: none;
+    }
 
+    50% {
+        background-size: 50%;
+        opacity: 1;
+    }
 
+    100% {
+        background-size: 100%;
+        opacity: 1;
+    }
+}
+
+.demo-section-content-container {
+    background-color: white !important;
+    padding: 10px;
+}
+
+.demo-section-first-heading {
+    font-family: 'Agrandir-Regular';
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 46.8px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #EA0000 !important;
+}
+.demo-section-second-heading {
+    font-family: 'Agrandir-Regular';
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 91px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+    color: #767875 !important;
+}
+ 
 
 
 
