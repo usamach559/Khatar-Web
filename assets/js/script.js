@@ -1,20 +1,31 @@
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
+  // Navbar animation
   gsap.from(".navbar", {
     opacity: 0,
     y: -150,
     duration: 0.8,
+    ease: "power2.out",
+    immediateRender: false
   });
+
+  // Other animations
   gsap.from(".up-animation", {
     opacity: 0,
-    y: 200,
+    y: 500,
     duration: 1,
+    ease: "power2.out",
+    immediateRender: false
+    
   });
+
   gsap.from(".button-container-index", {
     opacity: 0,
     y: 200,
     duration: 1,
+    ease: "power2.out",
+    immediateRender: false
   });
 
   gsap.from(".index-animated-first-img", {
@@ -22,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     x: 600,
     duration: 2,
     rotation: 45,
+    ease: "power2.out",
     onComplete: function () {
       gsap.to(".index-animated-first-img", {
         y: "-=10",
@@ -38,22 +50,57 @@ document.addEventListener("DOMContentLoaded", () => {
     x: 500,
     duration: 1.5,
     delay: 3,
-
+    ease: "power2.out"
   });
+
   gsap.from(".index-hero-fouth-heading-second", {
     opacity: 1,
     x: 500,
     duration: 1.3,
     delay: 3,
-
+    ease: "power2.out"
   });
+
   gsap.from(".index-hero-fouth-heading-third", {
     opacity: 1,
     x: 500,
     duration: 1.1,
     delay: 3,
-
+    ease: "power2.out"
   });
+
+  
+  gsap.from(".about-third-heading-container", {
+    y: 200,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".about-third-heading-container",
+      start: "top 100%", 
+    }
+  });
+  gsap.from(".about-second-row-container", {
+    y: 500,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".about-second-row-container",
+      end: "bottom 100%",
+    }
+  });
+  gsap.from(".about-us-fourth-contianer", {
+    y: 500,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".about-us-fourth-contianer",
+      end: "bottom 100%",
+    }
+  });
+ 
 });
 
 
