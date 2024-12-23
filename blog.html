@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="blog-first-container">
+        <nav class="navbar navbar-expand-lg animate__animated animate__fadeInDown animate_slower">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.png" alt="Logo" class="navbar-logo" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse ms-lg-4 ms-0" id="navbarNav">
+                    <form class="d-flex me-auto">
+                        <div class="search-container mt-3 position-relative">
+                            <input type="text" class="search-input-navbar form-control" placeholder="Search" />
+                            <a class="search-icon-container">
+                                <i class="bi bi-search search-icon"></i>
+                            </a>
+                        </div>
+                    </form>
+
+                    <ul class="navbar-nav gap-3 ms-auto d-flex align-items-center mt-3">
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link" href="service.html">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link" href="blog.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact-us.html" class="btn navbar-link-contact ">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container">
+            <div class="row mt-5 ">
+                <div class="blog-tabs mt-4 d-flex gap-2 align-items-center d-flex justify-content-between flex-wrap">
+                    <div class="d-flex gap-2 flex-wrap">
+                        <a class="blog-tab d-flex justify-content-center" data-bs-toggle="tab" href="#all">
+                            <span class="tab-heading">All</span>
+                        </a>
+                        <a class="blog-tab d-flex justify-content-center" data-bs-toggle="tab" href="#featured">
+                            <span class="tab-heading">Featured</span>
+                        </a>
+                        <a class="blog-tab d-flex justify-content-center" data-bs-toggle="tab" href="#marketing-tips">
+                            <span class="tab-heading">Marketing Tips</span>
+                        </a>
+                        <a class="blog-tab d-flex justify-content-center" data-bs-toggle="tab" href="#web-design">
+                            <span class="tab-heading">Web Design</span>
+                        </a>
+                        <a class="blog-tab d-flex justify-content-center" data-bs-toggle="tab" href="#business-growth">
+                            <span class="tab-heading">Business Growth</span>
+                        </a>
+                        <a class="blog-tab d-flex justify-content-center" data-bs-toggle="tab" href="#tech-trends">
+                            <span class="tab-heading">Tech Trends</span>
+                        </a>
+                    </div>
+                    
+                    <form class="d-flex  align-content-center mb-lg-3 mb-0">
+                        <div class="search-container mt-3 position-relative">
+                            <input type="text" class="search-input-blog form-control" placeholder="Search" />
+                            <a class="search-icon-container-blog">
+                                <i class="bi bi-search search-icon-blog"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content mt-4">
+            <div class="tab-pane fade show active" id="all">
+                <p>Content for All</p>
+            </div>
+            <div class="tab-pane fade" id="featured">
+                <p>Content for Featured</p>
+            </div>
+            <div class="tab-pane fade" id="marketing-tips">
+                <p>Content for Marketing Tips</p>
+            </div>
+            <div class="tab-pane fade" id="web-design">
+                <p>Content for Web Design</p>
+            </div>
+            <div class="tab-pane fade" id="business-growth">
+                <p>Content for Business Growth</p>
+            </div>
+            <div class="tab-pane fade" id="tech-trends">
+                <p>Content for Tech Trends</p>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+</body>
+
+</html>
