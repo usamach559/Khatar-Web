@@ -1595,3 +1595,87 @@ a {
     background-color: transparent !important;
     color: #EA0000;
 }
+
+.upload-date-blog-card {
+    position: relative;
+    top: 50px;
+    left: 10px;
+    padding: 10px 20px;
+    border-radius: 24px;
+    border: 1px solid white;
+    font-family: 'Agrandir-Regular';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22.1px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white !important;
+}
+
+.blog-third-section {
+    background-color: #EA0000 !important;
+    padding: 10px 20px;
+}
+
+.blog-third-row-heading {
+    font-family: 'Agrandir-Regular';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white !important;
+}
+
+.blog-third-row-second-heading {
+    font-family: 'Agrandir-Regular';
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #F5F5EF !important;
+}
+
+.blog-third-row-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.blog-third-row-icon-img {
+    width: 53.74px;
+    height: 53.74px;
+}
+
+.blog-third-row-icon:hover {
+    width: 130px;
+    height: 100px;
+    border-radius: 300px;
+}
+
+.blog-third-row-third-heading {
+    font-family: 'Agrandir-Regular';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+}
+
+.blog-thrid-row-checkbox {
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: black;
+}

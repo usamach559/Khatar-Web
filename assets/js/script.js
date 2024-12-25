@@ -100,6 +100,32 @@ document.addEventListener("DOMContentLoaded", () => {
       end: "bottom 100%",
     }
   });
+  gsap.from(".blog-second-row-col", {
+    y: -250,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.3,
+    scrollTrigger: {
+      trigger: ".blog-second-row-col",
+      start: "top 50%", // Animation starts when cards enter the viewport
+      end: "bottom 50%",
+
+    },
+  });
+  gsap.from(".blog-second-up-animaiton", {
+    y: 250,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.3,
+    scrollTrigger: {
+      trigger: ".blog-second-up-animaiton",
+      end: "bottom 100%",
+
+    },
+  });
+  
  
 });
 
