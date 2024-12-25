@@ -1679,3 +1679,46 @@ a {
     border: none;
     color: black;
 }
+
+.blogs-first-heading {
+    font-family: 'Agrandir-textbold';
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 130px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #EA0000 !important;
+}
+
+.blogs-second-heading {
+    font-family: 'Agrandir-Regular';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white !important;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 24px;
+}
+
+.blogs-first-user-image {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+
+}
+
+.blogs-first-name {
+    font-family: 'Agrandir-Regular';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #F5F5EF;
+}
