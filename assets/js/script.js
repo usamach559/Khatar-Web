@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 1,
     ease: "power2.out",
     immediateRender: false
-    
+
   });
 
   gsap.from(".button-container-index", {
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out"
   });
 
-  
+
   gsap.from(".about-third-heading-container", {
     y: 200,
     opacity: 0,
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out",
     scrollTrigger: {
       trigger: ".about-third-heading-container",
-      start: "top 100%", 
+      start: "top 100%",
     }
   });
   gsap.from(".about-second-row-container", {
@@ -125,26 +125,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     },
   });
-  
- 
+
+
 });
 
 
-  document.addEventListener('scroll', function () {
-    const backgroundImage = document.querySelector('.background-image');
-    const sectionEnd = backgroundImage.offsetHeight;
-    const scrollPosition = window.scrollY + window.innerHeight;
+document.addEventListener('scroll', function () {
+  const backgroundImage = document.querySelector('.background-image');
+  const sectionEnd = backgroundImage.offsetHeight;
+  const scrollPosition = window.scrollY + window.innerHeight;
 
-    if (scrollPosition >= sectionEnd) {
-      backgroundImage.style.position = 'fixed';
-      backgroundImage.style.top = '0'; 
-    } else {
-      
-      backgroundImage.style.position = 'relative';
-    }
-  });
+  if (scrollPosition >= sectionEnd) {
+    backgroundImage.style.position = 'fixed';
+    backgroundImage.style.top = '0';
+  } else {
+
+    backgroundImage.style.position = 'relative';
+  }
+});
 
 
 const copy = document.querySelector(".logos-slide").cloneNode(true);
 document.querySelector(".logos").appendChild(copy);
-
