@@ -1722,3 +1722,71 @@ a {
     text-decoration-skip-ink: none;
     color: #F5F5EF;
 }
+
+@media (max-width: 767px) {
+    .blogs-first-heading {
+        font-family: 'Agrandir-textbold';
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 70px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #EA0000 !important;
+    }
+}
+
+.blogs-second {
+    background-color: white !important;
+    padding: 20px 20px;
+    border-radius: 24px;
+}
+
+.blogs-big-para {
+    font-family: 'Agrandir-Regular';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46.8px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: black;
+}
+
+.blogs-QA .question {
+    font-family: 'Agrandir-textbold';
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 31.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #EA0000 !important;
+}
+
+.blogs-QA .answer {
+    font-family: 'Agrandir-Regular';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: black;
+}
+
+.other-blogs-container {
+    background-color: #EA0000 !important;
+    padding: 10px 20px;
+}
+
+.blogs-thrid-row-first-heading {
+    font-family: 'Agrandir-Regular';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46.8px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white ;
+}
