@@ -1820,9 +1820,8 @@ a {
 
 .service-first-container {
     background-color: #EA0000 !important;
-    height: 100vh;
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
 }
 
 .servives-first-heading {
@@ -1858,5 +1857,15 @@ a {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: white !important;
+
+}
+
+.services-second-row-col {
+    background-image: url(../images/44b5693ea076d9cc5dc5c4db7563eda0.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 756px;
+    height: 583px;
 
 }
