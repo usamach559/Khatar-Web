@@ -144,6 +144,28 @@ document.addEventListener('scroll', function () {
   }
 });
 
+document.querySelectorAll('.collapse-service').forEach(service => {
+  service.addEventListener('click', function () {
+      const container = this.closest('.collapse-service-container');
+      const collapseContent = container.querySelector('.collapse');
 
-const copy = document.querySelector(".logos-slide").cloneNode(true);
-document.querySelector(".logos").appendChild(copy);
+      // Close all other dropdowns
+      document.querySelectorAll('.collapse-service-container').forEach(el => {
+          if (el !== container) {
+              el.classList.remove('show');
+              el.querySelector('.collapse').classList.remove('show');
+          }
+      });
+
+      // Toggle the clicked dropdown
+      if (!container.classList.contains('show')) {
+          container.classList.add('show');
+          collapseContent.classList.add('show');
+      } else {
+          container.classList.remove('show');
+          collapseContent.classList.remove('show');
+      }
+  });
+});
+
+
