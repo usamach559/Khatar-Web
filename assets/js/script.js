@@ -125,7 +125,46 @@ document.addEventListener("DOMContentLoaded", () => {
 
     },
   });
+  gsap.from(".services-first-content-animation", {
+    y: 250,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.3,
+   
+  });
+  gsap.from(".services-second-content-animation", {
+    x: 250,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.3,
+   
+  });
+  gsap.from(".services-third-content-animation", {
+    y: -150,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.3,
+    scrollTrigger: {
+      trigger: ".services-third-content-animation",
+      end: "bottom center ",
+    },
+   
+  });
+  gsap.from(".services-fourth-content-animation", {
+    y: 250,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.3,
+    scrollTrigger: {
+      trigger: ".services-fourth-content-animation",
+      end: "bottom 100%",
 
+    },
+  });
 
 });
 

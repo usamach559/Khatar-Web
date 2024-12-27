@@ -2103,3 +2103,25 @@ a {
     transform: rotate(90deg);
     background-color: white;
 }
+
+
+/* portfolio page  */
+.portfolio-first-container{
+    background-color: #EA0000;
+    height: 100vh;
+}
+@keyframes scaleOut {
+    0% {
+        background-size: 100%;
+        opacity: 1;
+    }
+
+    50% {
+        background-size: 50%;
+        opacity: 1;
+    }
+
+    100% {
+        background-size: 0%;
+    }
+}
