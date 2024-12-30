@@ -33,7 +33,7 @@ body {
     margin: 0;
     overflow-x: hidden !important;
     overflow-y: auto !important;
-    }
+}
 
 a {
     text-decoration: none !important;
@@ -2107,5 +2107,56 @@ a {
 /* portfolio page  */
 .portfolio-first-container {
     background-color: white;
-    height: 100vh;
+}
+
+.potfolio-first-heading {
+    font-family: 'Agrandir-TextBold';
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 91px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.potfolio-first-heading .first {
+    color: white ;
+    transition: color 1s ease;
+}
+
+.potfolio-first-heading .second , .portfolio-second-heading  {
+    color: black;
+    transition: color 1s ease;
+}
+
+.potfolio-first-heading.text-transition .second   {
+    color: red;
+}
+.potfolio-first-heading.text-transition .first   {
+    color: black;
+}
+.portfolio-second-heading {
+    font-family: 'Agrandir-Regular';
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 46.8px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white; 
+    transition: color 1s ease; 
+}
+
+.portfolio-second-heading.text-transition {
+    color: red; 
+}
+.portfolio-third-heading {
+    font-family: 'Agrandir-Regular';
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 31.2px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
 }
