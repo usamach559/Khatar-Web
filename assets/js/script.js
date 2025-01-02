@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 1,
     ease: "power2.out",
     stagger: 0.3,
-   
+
   });
   gsap.from(".services-second-content-animation", {
     x: 250,
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 1,
     ease: "power2.out",
     stagger: 0.3,
-   
+
   });
   gsap.from(".services-third-content-animation", {
     y: -150,
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
       trigger: ".services-third-content-animation",
       end: "bottom center ",
     },
-   
+
   });
   gsap.from(".services-fourth-content-animation", {
     y: 250,
@@ -165,7 +165,46 @@ document.addEventListener("DOMContentLoaded", () => {
 
     },
   });
+  gsap.from(".footer-fourth-content-animation", {
+    y: 50,
+    opacity: 0,
+    duration: 1.5,
+    ease: "power2.out",
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: ".footer-fourth-content-animation",
+      start: "top 80%", // When the top of the container hits 80% of the viewport
+      end: "top 50%", // Optional end point
+      toggleActions: "play none none none", // Animation triggers
 
+    },
+  });
+  gsap.from(".footer-first-content-animation", {
+    x: -100,
+    opacity: 0,
+    duration: 1.5,
+    ease: "power2.out",
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: ".footer-first-content-animation",
+      start: "top 80%", // When the top of the container hits 80% of the viewport
+      end: "top 50%", // Optional end point
+      toggleActions: "play none none none", // Animation triggers
+
+    },
+  });
+  gsap.from(".flip-element", {
+    scrollTrigger: {
+      trigger: ".flip-element", // Element that triggers the animation
+      start: "top 80%", // When the top of the container hits 80% of the viewport
+      end: "top 50%", // Optional end point
+      toggleActions: "play none none none", // Animation triggers
+    },
+    duration: 2, // Animation duration
+    opacity: 0, // Start from invisible
+    rotateX: -80, // Start from -80 degrees
+    ease: "power1.out", // Smooth easing
+  });
 });
 
 
@@ -185,26 +224,24 @@ document.addEventListener('scroll', function () {
 
 document.querySelectorAll('.collapse-service').forEach(service => {
   service.addEventListener('click', function () {
-      const container = this.closest('.collapse-service-container');
-      const collapseContent = container.querySelector('.collapse');
+    const container = this.closest('.collapse-service-container');
+    const collapseContent = container.querySelector('.collapse');
 
-      // Close all other dropdowns
-      document.querySelectorAll('.collapse-service-container').forEach(el => {
-          if (el !== container) {
-              el.classList.remove('show');
-              el.querySelector('.collapse').classList.remove('show');
-          }
-      });
-
-      // Toggle the clicked dropdown
-      if (!container.classList.contains('show')) {
-          container.classList.add('show');
-          collapseContent.classList.add('show');
-      } else {
-          container.classList.remove('show');
-          collapseContent.classList.remove('show');
+    // Close all other dropdowns
+    document.querySelectorAll('.collapse-service-container').forEach(el => {
+      if (el !== container) {
+        el.classList.remove('show');
+        el.querySelector('.collapse').classList.remove('show');
       }
+    });
+
+    // Toggle the clicked dropdown
+    if (!container.classList.contains('show')) {
+      container.classList.add('show');
+      collapseContent.classList.add('show');
+    } else {
+      container.classList.remove('show');
+      collapseContent.classList.remove('show');
+    }
   });
 });
-
-

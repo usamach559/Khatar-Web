@@ -197,6 +197,11 @@ a {
 
 }
 
+.footer-links {
+    width: 51.99px;
+    height: 51.99px;
+}
+
 @media (max-width:500px) {
 
     .index-animated-first-img {
@@ -2430,6 +2435,7 @@ a {
     text-decoration-skip-ink: none;
     color: black !important;
 }
+
 .sas-project-card:hover .saas-card-link {
     font-family: 'Agrandir-Regular';
     font-size: 36px;
@@ -2440,19 +2446,40 @@ a {
     text-decoration-skip-ink: none;
     color: white !important;
 }
+
 .saas-link-icon {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
     background-color: #EA0000 !important;
-  width: 55px;
-   height: 55px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
-    transition: all 0.3s ease-in-out; /* Smooth transition */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .sas-project-card:hover .saas-link-icon {
-    transform: scale(1.1); /* Scale effect */
+    transform: scale(1.1);
+}
+
+.flip-container {
+    width: 200px;
+    height: 200px;
+    background-color: #EA0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    perspective: 400px;
+    /* Add perspective for 3D effect */
+    margin-top: 100vh;
+    /* Place the element lower to trigger animation */
+}
+
+.flip-element {
+    /* No initial transform or opacity is needed here */
 }
