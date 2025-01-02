@@ -141,6 +141,15 @@ document.addEventListener("DOMContentLoaded", () => {
     stagger: 0.3,
 
   });
+  gsap.from(".blog-details-first-animation", {
+    y: -350,
+    opacity: 0,
+    duration: 1.2,
+    ease: "power2.out",
+    stagger: 0.3,
+
+  });
+
   gsap.from(".services-third-content-animation", {
     y: -150,
     opacity: 0,

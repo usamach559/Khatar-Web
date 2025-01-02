@@ -861,7 +861,7 @@ a {
 @media (max-width:650px) {
     .footer-main-headng {
         font-family: 'Agrandir-TextBold';
-        font-size: 50.65px !important;
+        font-size: 46px !important;
         font-size: 500px;
         font-weight: 800;
         line-height: 70px;
@@ -1681,6 +1681,13 @@ a {
     height: 40px;
     border: none;
     color: black;
+}
+
+.blog-details-first-container-img {
+    background-image: url(../images/8ac9e47a6d3e4b0d2846d9bb3957f5be.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .blogs-first-heading {
