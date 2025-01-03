@@ -91,7 +91,9 @@ a {
     text-decoration-skip-ink: none;
     color: black !important;
 }
-
+.navbar-link.active{
+    color: white;
+}
 .navbar-link {
     font-family: 'Poppins-Regular';
     font-size: 18px;
@@ -973,4 +975,10 @@ a {
         transform: translateY(0);
         opacity: 1; 
     }
+}
+
+
+
+.about-us-second-section-map{
+    
 }

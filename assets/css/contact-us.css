@@ -1,0 +1,382 @@
+/* contct us */
+.bg-contact-us{
+    background-color: rgba(234, 0, 0, 1);
+}
+.contact-first-row-heading{
+    color: rgba(0, 0, 0, 1);
+    font-size: 7.9vw;
+    font-weight:800;
+    font-family: 'Agrandir-TextBold';
+
+}
+.contact-first-row-heading-second{
+    color: white;
+    font-size: 2.8vw;
+    font-weight:400;
+    font-family: 'Agrandir-Regular';
+
+}
+@media(min-width:1290px){
+    .contact-first-row-heading{
+        color: rgba(0, 0, 0, 1);
+        font-size: 100px;
+        font-weight:800;
+        font-family: 'Agrandir-TextBold';
+    
+    }
+    .contact-first-row-heading-second{
+        color: white;
+        font-size: 36px;
+        font-weight:400;
+        font-family: 'Agrandir-Regular';
+    
+    }
+}
+.first-row-contact-section{
+    margin-top: 100px;
+    width: 100%;
+}
+.about-sectio-second-row-col1-h2{
+    color:white;
+    font-size: 2.32vw;
+    font-weight:700;
+    font-family: 'Agrandir-TextBold';
+}
+.about-sectio-second-row-col1-h1{
+    color: white;
+    font-size: 7.5vw;
+    font-weight:800;
+    font-family: 'Agrandir-TextBold';
+    line-height: 8.9vw;
+}
+.about-sectio-second-row-col1-h3{
+    color: white;
+    font-size: 2.8vw;
+    font-weight:400;
+    font-family: 'Agrandir-Regular';
+    line-height: 46px;
+}
+.hr-about-us{
+    color: white;
+    opacity: 1;
+}
+.image-background-third-row-about-us{
+    background-image: url('../images/Map-3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 100vh;
+    width: 100%;
+    padding-bottom: 90px;    
+}
+@media(max-width:568px){
+    .image-background-third-row-about-us{
+        background-image: url('../images/Map-3.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        width: 100%;
+        
+    }
+
+}
+.about-us-second-section-map{
+    height: 219px;
+}
+@media(max-width:390px){
+    .about-us-second-section-map{
+        width: 100%;
+        height: 219px;
+    }
+
+}
+.image-container-contact{
+    height: 443px;
+    overflow: hidden;
+width: 90%;
+transition: all 0.7s ease-in-out;
+
+}
+.about-us-second-section-men{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.7s ease-in-out;
+}
+
+
+
+.image-container-contact:hover .about-us-second-section-men {
+    transform: scale(1.1);
+}
+
+
+@media(max-width:990px){
+    .about-us-second-section-men{
+        width: 90%;
+        height: auto;
+    }
+
+}
+.bg-contact-us-first-section {
+   background-color: white;
+}
+
+/* Keyframes for moving the background */
+@keyframes moveBackground {
+    0% {
+        background-position: top;
+    }
+    100% {
+        background-position: bottom;
+    }
+}
+.about-us-third-section-heading{
+    font-weight:700;
+    font-family: 'Agrandir-Regular';
+    font-size: 40px;
+
+}
+.about-us-third-section-paragraph{
+    font-weight:400;
+    font-family: 'Agrandir-Regular';
+    font-size: 31px;
+}
+.about-us-third-section-card-heading{
+    font-weight:700;
+    font-family: 'Agrandir-TextBold';
+    font-size: 23px;
+    text-align: center;
+    color: rgba(234, 0, 0, 1);
+}
+
+.about-us-third-section-card-paragraph{
+    font-weight:400;
+    font-family: 'Agrandir-Regular';
+    font-size: 20px;
+    align-items: end;
+}
+.padding-card-about-us{
+    border-radius: 24px;
+    padding: 25px 20px 25px 20px;
+}
+.about-us-third-section-arrow-card{
+    background-color: rgba(234, 0, 0, 1);
+    padding: 0px 5px;
+    transition: all 0.3s ease-in-out; 
+
+    border-radius: 50%;
+
+}
+
+.about-us-third-section-arrow-card{
+
+    font-size: 23px;
+}
+.card-contact-us.card:hover{
+    color: white !important;
+    background-color: black;
+    --bs-btn-color: white;
+
+}
+.card-contact-us.card{
+
+    transition: all 0.3s ease-in-out; 
+
+}
+.card-contact-us .about-us-third-section-arrow-card{
+
+    color: black;
+}
+.card-contact-us:hover .about-us-third-section-arrow-card{
+    color: white;
+}
+
+.about-us-third-section-arrow-card:hover{
+    background-color: transparent;
+    transform: rotate(-28deg);
+    color: rgba(234, 0, 0, 1) !important;
+    font-size: 26px;
+}
+.fourth-section-contact-f-paragraph{
+    font-size: 33px;
+    font-weight: 400;
+    font-family: 'Agrandir-Regular';
+color: white;
+line-height: 46px;
+}
+.fourth-section-contact-f-heading{
+    font-size: 37px;
+    font-weight: 800;
+    font-family: 'Agrandir-TextBold';
+color: white;
+line-height: 52px;
+}
+.contact-us-fourth-section-input{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    border-radius: 0px;
+    font-size: 20px;
+    font-family: 'Agrandir-Regular';
+    font-weight: 400;
+    color: white !important;
+    margin-top: 66px;
+    padding: 5px 5px 16px 5px;
+}
+.contact-us-fourth-section-input::placeholder{
+color: white;
+font-size: 20px;
+font-family: 'Agrandir-Regular';
+font-weight: 400;
+}
+.contact-us-fourth-section-input:focus{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow: 0 0 0 0rem rgba(13, 110, 253, .25);
+
+}
+.col-input-contact-us-section4{
+width: 32%;
+}
+.row-input-contact-us-section4{
+gap: 2%;
+}
+@media(max-width:990px){
+    .col-input-contact-us-section4{
+        width: 49%;
+    
+    }
+
+}
+@media(max-width:768px){
+    .col-input-contact-us-section4{
+        width: 100%;
+    
+    }
+
+}
+.index-increase{
+    position: relative;
+    z-index: 8;
+}
+.background {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 683px; /* Full viewport height */
+    z-index: 1; /* Keep it behind other content */
+    background-color: white;
+    overflow: hidden; /* Prevents scrollbars */
+  }
+  
+        .first-row-contact-section , .navbar{
+          position: relative;
+          z-index: 8;
+        }
+     @media(max-width:992px){
+        .margin-responsive-third-contact{
+            margin: 12px;
+        }
+     }
+     .button-container-contact {
+        margin: 0;
+        padding: 0;
+        gap: 0;
+        display: flex;
+    }
+    .contact-first-btn {
+        background-color: #767875 !important;
+        padding: 10px 25px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 24px;
+        border-bottom-left-radius: 24px;
+        font-family: 'Poppins-Regular';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: white !important;
+        text-decoration: none !important;
+        transition: border-radius 0.7s ease;
+    }
+    
+    .contact-first-btn-second {
+        background-color: #767875 !important;
+        padding: 10px 15px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 24px;
+        font-family: 'Poppins-Regular';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: white !important;
+        position: relative;
+        left: -10px;
+        transition: border-radius 0.7s ease;
+    }
+    .button-container-contact:hover .contact-first-btn {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 24px;
+        border-bottom-left-radius: 24px;
+        background-color: black !important;
+    }
+    
+    .button-container-contact:hover .contact-first-btn-second {
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 24px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        background-color: black !important;
+    }
+    .fifth-section-contact-email{
+        /* font-family: 'Agrandir-TextBold'; */
+        font-family: 'Poppins-Regular';
+
+        font-size: 42px;
+        color: white;
+        font-weight: 700;
+    }
+    .fifth-section-contact-heading{
+        font-family: 'Agrandir-TextBold';
+        font-size: 31px;
+        color: white;
+        font-weight: 700;
+    }
+    .fifth-section-contact-b-paragaph{
+        font-family: 'Poppins-Regular';
+        font-size: 31px;
+        font-weight: 400;
+        color: white;
+
+    }
+    .arrow-fifth-section-contact{
+        background-color: white;
+        padding: 16px 11px;
+        transition: all 0.3s ease-in-out;
+        margin-left: 15px;
+        border-radius: 50%;
+    }
+    .arrow-fifth-section-contact:hover{
+        background-color: white;
+        padding: 16px 20px;
+        border-radius: 45%;
+    }
+     .fifth-section-contact input[type="checkbox"] {
+        width: 51px;
+        height: 51px; /* Height of the checkbox */
+        background-color: black; /* Background color of the checkbox */
+        accent-color: black; /* Tick color (if supported by the browser) */
+    }

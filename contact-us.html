@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/contact-us.css" />
+    <style> 
+   
+
+      
+      </style>
+</head>
+
+<body  >
+    <div class="bg-contact-us">
+    <div class="bg-contact-us-first-section ">
+        <div class="background"></div>
+        <nav class="navbar navbar-expand-lg animate__animated animate__fadeInDown animate_slower">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.png" alt="Logo" class="navbar-logo" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse ms-lg-4 ms-0" id="navbarNav">
+                    <form class="d-flex me-auto">
+                        <div class="search-container mt-3 position-relative">
+                            <input type="text" class="search-input-navbar form-control" placeholder="Search" />
+                            <a class="search-icon-container">
+                                <i class="bi bi-search search-icon"></i>
+                            </a>
+                        </div>
+                    </form>
+
+                    <ul class="navbar-nav gap-3 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link " href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link" href="service.html">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-link" href="blog.htlm">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact-us.html" class="btn navbar-link-contact ">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <div class="row justify-content-center  align-items-end first-row-contact-section">
+    <div class="col-9 pb-5 bg-contact-us   margin-first-row-contact ">
+        <h1 class="contact-first-row-heading">Your Questions, Our Priority</h1>
+        <h3 class="contact-first-row-heading-second"> Let’s Connect!</h3>
+    </div>
+</div>
+<hr class="hr-about-us m-0 index-increase">
+</div>
+
+    <div class="container">
+        <div class="row pt-5 index-increase">
+            <div class="col-lg-7 mt-5">
+                <h2 class="about-sectio-second-row-col1-h2">The Bridge to Solutions</h2>
+                <h1 class="about-sectio-second-row-col1-h1">Talk to the Team</h1>
+                <h3 class="about-sectio-second-row-col1-h3">We're Here to Help</h3>
+                <img src="assets/images/map (4).png" alt="" class="about-us-second-section-map">
+
+            </div>
+            <div class="col-lg-5 mt-5 d-flex justify-content-lg-end justify-content-center ">
+                <div class="image-container-contact ms-lg-auto">
+
+                    <img src="assets/images/a.png" alt="" class="about-us-second-section-men ">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script>
+  gsap.fromTo(".background", 
+  {
+    backgroundColor: "rgba(234, 0, 0, 1)",
+    scaleY: 0.69, // Start from collapsed state
+    scaleX: 0.7479,
+    transformOrigin: "bottom center",
+    marginLeft: "-12px", 
+
+  }, 
+  {
+    backgroundColor: "rgba(234, 0, 0, 1)",
+    scaleY: 1,
+    scaleX: 1,
+    duration: 3,
+    marginLeft: "0px", 
+    ease: "power2.inOut",
+
+    onComplete: () => {
+      document.body.style.overflowY = "auto"; // Enable scrolling after animation
+    }
+  }
+);
+setTimeout(function() {
+   document.querySelector('.bg-contact-us-first-section').style.backgroundColor = 'rgba(234, 0, 0, 1)';
+}, 3000);
+
+    </script>
+    <div class="image-background-third-row-about-us ">
+        <div class="container index-increase">
+        <div class="col-lg-6 mt-3 pt-5 pb-1">
+            <h1 class="about-us-third-section-heading mt pt-5">Ready to Partner?</h1>
+            <p class="about-us-third-section-paragraph p">Drop us a line by phone, email, or the form below—we’re here for you!</p>
+            
+        </div>
+        <div class="row justify-content-between  pt-5" style="width: 100%;">
+            <div class="col-lg-3 margin-responsive-third-contact card card-contact-us padding-card-about-us">
+                <p class="text-center about-us-third-section-card-heading">Morocco</p>
+                <p class="about-us-third-section-card-paragraph">APARTMENT NO 409 RESIDENCE ANNAKHIL 35 BOULEVARD ABDELKRIM KHATTABI QUARTIER ANFA</p>
+                    <div class=" mt-auto " >
+                        <p class="about-us-third-section-card-paragraph m-0 mt-5 justify-content-between d-flex">
+                            918 61 27 99 <a href="" class=" about-us-third-section-arrow-card"><i class="bi bi-arrow-right"></i></a>
+                        </p>
+
+                    </div>
+            </div>
+            <div class="col-lg-3 margin-responsive-third-contact card card-contact-us padding-card-about-us">
+                <p class="text-center about-us-third-section-card-heading">Netherlands</p>
+                <p class="about-us-third-section-card-paragraph">Vroeg in de Weidreef 5x
+                    Cothen, Zeeland</p>
+                    <div class=" mt-auto " >
+                        <p class="about-us-third-section-card-paragraph m-0 mt-5 justify-content-between d-flex">
+                            918 61 27 99 <a href="" class=" about-us-third-section-arrow-card"><i class="bi bi-arrow-right"></i></a>
+                        </p>
+
+                    </div>
+            </div>
+            <div class="col-lg-3 margin-responsive-third-contact card card-contact-us padding-card-about-us">
+                <p class="text-center about-us-third-section-card-heading ">Spain</p>
+                <p class="about-us-third-section-card-paragraph ">Carretera Virgen de la Nueva, M-957
+                    San Martin de Valdeiglesias, Madrid</p>
+                    <div class=" mt-auto " >
+                        <p class="about-us-third-section-card-paragraph m-0 mt-5 justify-content-between d-flex">
+                            918 61 27 99 <a href="" class=" about-us-third-section-arrow-card"><i class="bi bi-arrow-right"></i></a>
+                        </p>
+
+                    </div>
+            </div>
+
+        </div>
+
+    </div>
+ </div>
+ <div class="container index-increase">
+ <div class="row pb-4 pt-5 mt-4 ">
+    <div class="col-lg-6">
+        <h1 class="fourth-section-contact-f-heading">Let’s Connect Today!</h1>
+        <p class="fourth-section-contact-f-paragraph">We’re just a message away from helping you!</p>
+    </div>
+    <div class="row row-input-contact-us-section4">
+        <div class="col-4 col-input-contact-us-section4">
+            <input type="text" class="form-control contact-us-fourth-section-input " placeholder="First Name">
+        </div>
+        <div class="col-4 col-input-contact-us-section4">
+            <input type="text" class="form-control contact-us-fourth-section-input " placeholder="Last Name">
+
+        </div>
+        <div class="col-4 col-input-contact-us-section4">
+
+            <input type="text" class="form-control contact-us-fourth-section-input " placeholder="First Name">
+        </div>
+        <div class="col-4 col-input-contact-us-section4">
+
+            <input type="text" class="form-control contact-us-fourth-section-input " placeholder="Company/Organization">
+        </div>
+        <div class="col-4 col-input-contact-us-section4">
+
+            <input type="text" class="form-control contact-us-fourth-section-input " placeholder="Your URL">
+        </div>
+        <div class="col-4 col-input-contact-us-section4">
+
+            <input type="text" class="form-control contact-us-fourth-section-input " placeholder="How Did You Hear About Us?">
+        </div>
+        <div class="col-12">
+
+            <input type="text" class="form-control contact-us-fourth-section-input " placeholder="Message">
+        </div>
+        <span class=" mt-5 mb-4">
+
+            <button type="submit" class="btn button-container-contact">
+                <span class=" contact-first-btn">
+                    Send Your Enquiry
+                </span>
+                <span class=" contact-first-btn-second">
+                    <img src="assets/svg/Arrow 1.svg" alt="">
+                </span>
+            </button>
+        </span>
+    </div>
+    
+</div>
+<h1 class="fifth-section-contact-heading mt-5 pt-5">SIGN UP TO OUR NEWS LETTER:</h1>
+<p class="mt-5"><span class="fifth-section-contact-email">Your @email.com</span> <a href="" class="btn"> <img src="assets/svg/vector-arrow.svg" alt="" class="arrow-fifth-section-contact"> </a></p>
+   <div class="d-flex fifth-section-contact pt-4 pb-5 mb-5">
+    <input type="checkbox" class=""> <span class="ms-3 fifth-section-contact-b-paragaph">I have read and accept the Terms & Privacy</span>
+   </div>
+</div>
+    <div class="footer">
+        <div class="container">
+            <div class="row ">
+                <div class="mt-3 d-flex justify-content-center">
+                    <span class="footer-main-headng">
+                        CONTACT US
+                    </span>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-7 mb-4">
+                    <div class="mt-3 ">
+                        <a href="#" class="footer-col-headng-first">
+                            ABOUT US
+                        </a>
+                    </div>
+                    <div class="mt-3 ">
+                        <a href="#" class="footer-col-headng-first">
+                            PORTFOLIO
+                        </a>
+                    </div>
+                    <div class="mt-3 ">
+                        <a href="#" class="footer-col-headng-first">
+                            SERVICES
+                        </a>
+                    </div>
+                    <div class="mt-3 ">
+                        <a href="#" class="footer-col-headng-first">
+                            BLOGS
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-5 mb-4 d-flex justify-content-end align-items-end">
+                    <div class="mt-3 ">
+                        <a href="#" class="footer-col-headng-third ">
+                            <span>Get a Free Consultation </span>
+                            <img src="assets/svg/Vector (43).svg" class="ms-2" alt="">
+                        </a>
+                        <br>
+                        <a href="#" class="footer-col-headng-third mt-3">
+                            <span>Try Our Demo</span>
+                            <img src="assets/svg/Vector (43).svg" class="ms-2" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" d-flex gap-5 flex-wrap ">
+                    <a href="#" class="footer-col-headng-second">
+                        Instagram
+                    </a>
+                    <a href="#" class="footer-col-headng-second">
+                        x
+                    </a>
+                    <a href="#" class="footer-col-headng-second">
+                        Facebook
+                    </a>
+                    <a href="#" class="footer-col-headng-second">
+                        LinkedIn
+                    </a>                                                                                    
+                </div>
+            </div>
+            <div class="row ">
+                <div class="mt-5 mb-3 d-flex justify-content-center">
+                    <span class="footer-last-heading">
+                        Copyright KHATAR Co.,Ltd. All Rights Reserved.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    setTimeout(() => {
+  document.body.style.overflowY = "auto";
+}, 3000);
+</script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+</body>
+
+</html>
